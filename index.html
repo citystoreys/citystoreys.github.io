@@ -1,30 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CityStoreys</title>
 
   <style>
-    body {
+    html, body {
       margin: 0;
-      background: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      overflow: hidden;
+      min-height: 100%;
+      background: #ffffff;
+      color: #05070d;
+      font-family: Arial, sans-serif;
     }
 
-    img {
-      max-width: 100%;
-      max-height: 100%;
-      object-fit: contain;
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 32px 20px;
+      box-sizing: border-box;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1100px;
+    }
+
+    h1 {
+      margin: 0 0 42px;
+      font-size: clamp(4.3rem, 15vw, 12rem);
+      line-height: 0.82;
+      font-weight: 900;
+      letter-spacing: -0.08em;
+    }
+
+    .line-one {
+      margin: 0 0 22px;
+      font-size: clamp(1.2rem, 4vw, 2.6rem);
+      font-weight: 800;
+    }
+
+    .line-two {
+      margin: 0 0 34px;
+      font-size: clamp(1rem, 3.2vw, 2.1rem);
+      font-weight: 800;
+    }
+
+    .coming {
+      margin: 0 0 38px;
+      font-size: clamp(0.95rem, 2.8vw, 1.7rem);
+      font-weight: 800;
+    }
+
+    .email {
+      margin: 0;
+      font-size: clamp(0.75rem, 2vw, 1rem);
+      font-weight: 800;
     }
   </style>
 </head>
 
 <body>
-  <img src="Landing%20Page%20v2-whitebg.png" alt="CityStoreys Landing Page">
+  <main>
+    <h1>CityStoreys</h1>
+    <p class="line-one">Navigate a story embedded in the city.</p>
+    <p class="line-two">The streets hold the clues — but your choices shape the story.</p>
+    <p class="coming">Urban odysseys coming to Toronto Summer 2026</p>
+    <p class="email">hello@citystoreys.com</p>
+  </main>
 </body>
 </html>
